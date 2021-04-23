@@ -82,13 +82,14 @@ const authConfig = {
 const uiConfig = {
     "theme": "dark", // switch between themes, default set to dark, select from https://github.com/ParveenBhadooOfficial/Google-Drive-Index#themes
     "dark_mode": true, // incase you're viewing wrong colors try switching this
-    "version": "2.0.16-beta", // don't touch this one. get latest code using generator at https://generator.driveindex.ga
+    "version": "2.0.16", // don't touch this one. get latest code using generator at https://generator.driveindex.ga
     // If you're using Image then set to true, If you want text then set it to false
     "logo_image": true, // true if you're using image link in next option.
     "logo_height": "", // only if logo_image is true
     "logo_width": "100px", // only if logo_image is true
     // if logo is true then link otherwise just text for name
     "logo_link_name": "https://cdn.jsdelivr.net/gh/jscdn/svg@1.0.3/bhadoo-cloud-logo-white.svg",
+    "fixed_header": false, // If you want the header to be flexible or fixed.
     "contact_link": "https://t.telegram.ind.in/BhadooCloud", // Link to Contact Button on Menu
     "copyright_year": "2050", // year of copyright, can be anything like 2015 - 2020 or just 2020
     "company_name": "Bhadoo Cloud", // Name next to copyright
@@ -234,6 +235,7 @@ function html(current_drive_order = 0, model = {}) {
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js" integrity="sha384-b/U6ypiBEHpOf/4+1nzFpr53nxSS+GLCkfwBdFNTxtclqqenISfwAzpKaMNFNmj4" crossorigin="anonymous"></script>
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
   <script src="https://cdn.plyr.io/${uiConfig.plyr_io_version}/plyr.polyfilled.js"></script>
+  <script src="//mozilla.github.io/pdf.js/build/pdf.js"></script>
 </html>`;
 };
 
